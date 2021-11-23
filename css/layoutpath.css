@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* general */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+h5 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bubbleblue {
+    position: relative;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 22px;
+    width: 200px;
+    background: #1d2139;
+    border-radius: 40px;
+    padding: 20px;
+    text-align: center;
+    color: #9dffe8;
+}
+
+.bubble-bottom-left-blue:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #1d2139;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #1d2139;
+    border-bottom: 20px solid transparent;
+    left: 32px;
+    bottom: -24px;
+}
+
+
+.bubble {
+    position: relative;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 22px;
+    width: 200px;
+    background: #ffeae6;
+    border-radius: 40px;
+    padding: 20px;
+    text-align: center;
+    color: #1d2139;
+}
+
+.bubble-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #ffeae6;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #ffeae6;
+    border-bottom: 20px solid transparent;
+    left: 32px;
+    bottom: -24px;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.scroll p {
+  margin-bottom: 0;
+}
+
+/* header */
+
+
+.icon {
+    color: #9dffe8;
+    font-size: 30px;
+}
+
+
+.header {
+    background-color: #000;
+    height: 10vh;
+}
+
+.character-body .header {
+  background-color: #000;
+}
+
+.header li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.back-arrow {
+  text-align: left;
+  padding-top: 14px;
+  color: #9dffe8;
+}
+
+.header a {
+    color: #fff;
+    margin: 10px;
+    text-align: center;
+}
+
+.header p {
+    margin-top: 10px;
+    margin-bottom: 7px;
+    color: #fff;
+}
+
+ul.list-inline {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+#info-button {
+  cursor: pointer;
+}
+
+#info-text {
+  background-color: #9dffe8;
+  color: #000;
+  width:300px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  display: none;
+  padding:20px;
+  margin-right: 25px;
+}
+
+#info-text p {
+  color: #000;
+  font-size: 16px;
+}
+
+#close-icon {
+  font-size: 20px;
+  padding-right: 10px;
+  padding-top: 10px;
+  float: right;
+  cursor: pointer;
+}
+/* pictures */
+
+.skating-girl{
+  margin-right: 200px;
+  margin-top: 30px;
+  width: 150px;
+}
+
+.skating-boy{
+  margin-right: 200px;
+  margin-top: 30px;
+  width: 110px;
+}
+
+.bear {
+  width: 170px;
+  padding-left: 20px;
+}
+
+.monkey {
+  width: 100px;
+}
+
+.happygirl{
+
+}
+
+#sadgirl{
+
+  width: 150px;
+}
+
+
+#happygirl
+{
+
+  width: 150px;
+}
+
+#sadboy{
+  width: 120px;
+}
+
+#happyboy{
+  width: 120px;
+
+}
+
+.happyboy{
+  display: none;
+  width: 138px;
+}
+
+
+#happygirlbig {
+    width: 150px;
+}
+
+#manbig {
+    display: none;
+    width: 90px;
+    padding-bottom: 10px;
+}
+
+.girlcharacter_square,
+.mancharacter_square {
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Navbar */
+
+.social-icons i {
+    font-size: 30px;
+    color: #9dffe8;
+}
+
+nav {
+    background-color: #000;
+}
+
+/* select character */
+
+.index {
+  background-color: #000;
+}
+
+#girl-overlay {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  background-color:rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+#boy-overlay {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  background-color:rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.intro-container {
+  width: 80%;
+  margin-left: 20%;
+}
+
+.intro {
+    margin: auto;
+}
+
+.intro p {
+    font-size: 20px;
+}
+
+.small-img-container {
+  width: 50%;
+  margin: auto;
+}
+
+.select-character-button {
+    color: #9dffe8;
+    border: 2px solid #9dffe8;
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.characters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.girl-container {
+    padding-right: 10px;
+    position: relative;
+}
+
+.man-container {
+  padding-left: 10px;
+  position: relative;
+}
+
+.blue-text {
+  color: #9dffe8;
+}
+
+/* Welcome street first timeline */
+
+h2{
+  
+  font-size: 40px;
+  color: #6a65f5;
+  
+
+}
+
+.first-timeline{
+  background-color:#000 ;
+  padding-bottom: 30px;
+
+}
+.second-timeline{
+  background-color:#000 ;
+  padding-bottom: 30px;
+
+}
+
+
+svg {
+  max-width: 400px;
+  margin: 50px auto 200px;
+  display: block;
+}
+
+.speech-bubble-one{
+  
+  opacity: .5;
+
+}
+.speech-bubble-two{
+
+opacity: .5;
+}
+
+
+/* Planet statistics section 2 */
+
+.planetsatistics {
+    background-color: #000;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.fact-everyyear {
+  display: flex;
+  align-items: center;
+}
+
+.fact-everyyear p {
+ color: #9dffe8;
+ font-size: 20px;
+ padding-top: 40px;
+}
+
+.fact-purple
+{
+  color: #6a65f5;
+}
+
+.fact-blue
+{
+  color: #9dffe8;
+}
+
+.fact h5 {
+    
+    font-size: 30px;
+}
+
+.earth {
+     color: #9dffe8;
+     font-size: 60px;
+     text-align: left;
+     padding-bottom: 20px;
+     padding-top: 80px;
+}
+
+.monkey-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* second timeline */
+
+.second-timeline{
+  background-color:#000 ;
+  padding-bottom: 30px;
+
+}
+
+/* fad skating section */
+
+.girl-shout-heading {
+  text-align: left;
+  padding: 20px;
+  font-size: 40px;
+  padding-top: 50px;
+}
+
+.blue {
+  color: #554ff9;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.skating-section {
+  background: #ffeae6;
+  width: 100%;
+  height: 100%;
+
+}
+
+.gsap-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1d2139;
+  font-size: 4rem;
+  visibility: hidden;
+}
+
+
+
+
+.wide-bubble {
+  width: 300px;
+}
+
+.lil-wide-bubble {
+  width: 280px;
+}
+
+.girlshout{
+  width: 150px;
+}
+
+.solutions h1 {
+  font-size: 20px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.solutions
+{
+  padding: 20px;
+
+}
+
+/* End screen share section 5 */
+
+.endsection {
+  background-color: #000;
+  width: 100vw;
+  color: #9dffe8;
+  display: flex;
+  justify-content: center;
+}
+.endsection h1 {
+  font-size: 20px;
+}
+
+#speech-bubble-12{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.social-share {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+
+.fb-share {
+  padding-right: 5px;
+}
+
+.twitter-share {
+  padding-left: 1px;
+}
+
+/* footer */
+
+.footer {
+  background-color: #000;
+  padding-top: 20px;
+}
+
+.social-footer {
+  display: flex;
+  padding: 10px;
+}
+
+.like-counter {
+  border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+
+}
+
+/* media Qs */
+
+@media only screen and (min-width: 768px) 
+{
+  
+  .inner-planet-statistics {
+    width: 70%;
+  }
+h2 {font-size: 60px;
+  width: 70%;
+
+
+}
+  .fact h5 {
+    font-size: 70px;
+}
+
+.inner-planet-statistics p {
+  font-size: 20px;
+}
+
+.fact-everyyear p {
+  font-size: 30px;
+}
+
+.earth p {
+  font-size: 70px;
+}
+
+  .solutions h1 {
+    font-size: 30px;
+    padding-bottom: 5px;
+    padding-top: 30px;
+  }
+
+  .medium-70 {
+    width: 70%;
+  }
+
+  .wide-bubble {
+    width: 380px;
+  }
+  .index-row {
+    padding-top: 100px;
+  }
+  .solutions {
+    
+}
+    #info-text {
+        width: 500px;
+}
+
+@media only screen and (min-width: 1200px) 
+{
+  .monkey {
+    margin-right: 200px;
+  }
+}
